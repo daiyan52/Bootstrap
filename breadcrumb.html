@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <title>breadcrumb</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <style>
+            .breadcrumb-item + .breadcrumb-item::before {
+                color: aquamarine;
+            content: var(--bs-breadcrumb-divider, "#")
+            }
+        </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <nav class="text-danger bg-black">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active">Home</li>
+                <li class="breadcrumb-item">About</li>
+                <li class="breadcrumb-item">Portfolio</li>
+                <li class="breadcrumb-item">Education</li>
+                <li class="breadcrumb-item">Project</li>
+                <li class="breadcrumb-item">Contact</li>
+            </ol>
+        </nav>
+    </div>
+</body>
+</html>
